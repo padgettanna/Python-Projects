@@ -16,4 +16,4 @@ x = ""
 random.shuffle(password)
 for pas in password:
   x += str(pas)
-print(x)
+print(f"Your passwors is: {x}")
