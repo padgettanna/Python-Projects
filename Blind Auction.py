@@ -1,6 +1,4 @@
 from replit import clear
-from art import logo
-print(logo)
 all_bidders = {}
 stop_bidding = False
 while not stop_bidding:
