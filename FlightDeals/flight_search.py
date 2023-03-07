@@ -1,8 +1,8 @@
 import requests
 import datetime
 
-TEQUILA_ENDPOINT = "https://api.tequila.kiwi.com"
-TEQUILA_API_KEY = "ENvkRUuetXpC15h5cx7VIkj9wgkZ082X"
+TEQUILA_ENDPOINT = "Your API"
+TEQUILA_API_KEY = "Your API key"
 TOMORROW = datetime.date.today() + datetime.timedelta(days=1)
 TOMORROW_PLUS_6MONTHS = TOMORROW + datetime.timedelta(days=180)
 
@@ -25,12 +25,12 @@ class FlightSearch:
         return code
 
     def flight_prices_search(self, iata_code):
-        search_api = "https://api.tequila.kiwi.com/v2/search"
+        search_api = "Your API"
         header = {
             "apikey": TEQUILA_API_KEY
         }
         search_params = {
-            "fly_from": "LAX",
+            "fly_from": "Origin aiti code",
             "fly_to": iata_code,
             "date_from": TOMORROW.strftime("%d/%m/%Y"),
             "date_to": TOMORROW_PLUS_6MONTHS.strftime("%d/%m/%Y"),
