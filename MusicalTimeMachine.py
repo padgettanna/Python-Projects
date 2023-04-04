@@ -19,7 +19,6 @@ soup = BeautifulSoup(bilboard_web_page, "html.parser")
 songs = soup.find_all(name="h3", class_="a-no-trucate")
 for song in songs:
     songs_titles.append(song.get_text().strip())
-print(songs_titles)
 
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
